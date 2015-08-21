@@ -17,7 +17,7 @@ public class Wr8 extends CordovaPlugin {
 
         } 
         else if (action.equals("init")) {
-            callbackContext.success("WaterR8 Initialization success!");
+            callbackContext.success("WaterR8 Dongle Initialization success!");
             return true;
         } else {
             return false;
