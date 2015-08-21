@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="com.wr8.plugin"
+        version="0.7.0">
+
+  <name>Wr8</name>
+
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+
+  <asset src="www/wr8-plugin.js" target="js/wr8-plugin.js"/>
+
+  <js-module src="www/wr8-plugin.js" name="wr8">
+    <clobbers target="wr8" />
+  </js-module>
+
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="Wr8">
+        <param name="android-package" value="com.wr8.plugin.Wr8"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/Wr8.java" target-dir="src/com/wr8/plugin/"/>
+  </platform>
+
+</plugin>
