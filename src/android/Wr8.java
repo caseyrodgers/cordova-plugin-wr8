@@ -11,7 +11,7 @@ public class Wr8 extends CordovaPlugin {
 
         if (action.equals("echo")) {
             String name = data.getString(0);
-            String message = "Hello from Java Bitch!, " + name;
+            String message = "Hello from java isside of plugin!, " + name;
             callbackContext.success(message);
             return true;
 
