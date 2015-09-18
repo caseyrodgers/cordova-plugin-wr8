@@ -9,9 +9,10 @@ public class Wr8 extends CordovaPlugin {
     @Override
     public boolean execute(String action, JSONArray data, CallbackContext callbackContext) throws JSONException {
 
+      
         if (action.equals("echo")) {
             String name = data.getString(0);
-            String message = "Hello from java isside of plugin!, " + name;
+            String message = "Hello from java inside of plugin!, " + name;
             callbackContext.success(message);
             return true;
 
